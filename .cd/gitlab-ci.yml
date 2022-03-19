@@ -1,0 +1,17 @@
+variables:
+  DOCKER_HOST: tcp://docker:2375/
+stages:
+  -package
+
+package:
+ stage: package
+ image: docker:18-git
+ services:
+   - name: docker:18-dind
+ variables:
+   DOCKER_REGISTRY_NAME: $MY_CI_REGISTRY_NAME:$CI_PIPELINE_ID
+   TODO_FRONTEND_URL: $MY_TODO_FRONTEND_URL
+ script:
+   - docker login -u $MY_CI_DOCKER_USER --password $MY_CI_DOCKER_PASS
+   - docker build -t $DOCKER_REGISTRY_NAME $CI_PROJECT_DIR
+   - docker push $DOCKER_REGISTRY_NAME
