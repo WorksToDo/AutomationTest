@@ -18,7 +18,8 @@ const {
     text,
     into,
     textBox,
-    evaluate
+    evaluate,
+    clear
 } = require('taiko');
 const assert = require("assert");
 const headless = process.env.headless_chrome.toLowerCase() === 'true';
@@ -42,7 +43,7 @@ step("Write a <item> to text box", async (item) => {
 });
 
 step("Click to <item> button", async function(item) {
-	await press(item);
+	await click(text(item));
     await clear(textBox({ id:'todo-input' }))
 });
 
@@ -53,7 +54,8 @@ step("I should see <message> item", async function (message) {
 step("Add todos <table>", async function (table) {
     for (var row of table.rows) {
         await write(row.cells[0], into(textBox({ id:'todo-input' })));
-        await press('Save');
+        await click(text('Save'));
+        await clear(textBox({ id:'todo-input' }))
     }
 });
 
