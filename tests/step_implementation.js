@@ -35,7 +35,7 @@ afterSuite(async () => {
 });
 
 step("Open todo application", async function () {
-    await goto("localhost:3000");
+    await goto(process.env.FRONTEND_URL || "localhost:3000");
 });
 
 step("Write a <item> to text box", async (item) => {
