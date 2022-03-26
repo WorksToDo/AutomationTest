@@ -5,6 +5,7 @@
     "test": "gauge run specs/"
   },
   "dependencies": {
-    "taiko": "latest"
+    "taiko": "latest",
+    "@getgauge/cli": "^1.1.1"
   }
 }

@@ -6,19 +6,10 @@ const {
     write,
     closeBrowser,
     goto,
-    press,
-    button,
-    screenshot,
-    above,
-    click,
-    checkBox,
-    listItem,
-    toLeftOf,
-    link,
     text,
     into,
     textBox,
-    evaluate,
+    click,
     clear
 } = require('taiko');
 const assert = require("assert");
@@ -35,7 +26,7 @@ afterSuite(async () => {
 });
 
 step("Open todo application", async function () {
-    await goto(process.env.FRONTEND_URL || "localhost:3000");
+    await goto('http://34.116.156.27:8090/');
 });
 
 step("Write a <item> to text box", async (item) => {
