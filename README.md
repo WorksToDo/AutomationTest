@@ -1,9 +1,10 @@
-
-<img src="https://img.stackshare.io/service/4055/gauge_icon_for_stackshare.png" align="right" width="40" height = "40">
-<img src="https://taiko.dev/taiko_logo.11fb147d.svg" align="right" width="40" height = "40">
-
+<h3 align="center"></h3>
+<div align="right">
+  <img src="https://eneskzlcn.github.io/my-published-images/todo-icon.png" width="50" height="50">
+</div>
 <h3 align="center">TODO ASSIGNMENT USER ACCEPTANCE</h3>
 
+<br>
 
 #### Project information and purpose
 
@@ -89,3 +90,7 @@ The all parts of project getting deployed into to environments; test and product
 - Taiko official <a href="https://docs.taiko.dev/">docs</a>,
 - An educational video from Scott Davis <a href="https://www.youtube.com/watch?v=gXK-0lGGNSQ&t=1235s">here</a>,
 - An educational video from Naveen <a href="https://www.youtube.com/watch?v=sq-6brFJoDg">here</a>
+
+<img src="https://img.stackshare.io/service/4055/gauge_icon_for_stackshare.png" align="right" width="40" height="40">
+
+<img src="https://taiko.dev/taiko_logo.11fb147d.svg" align="right" width="40" height="40">
